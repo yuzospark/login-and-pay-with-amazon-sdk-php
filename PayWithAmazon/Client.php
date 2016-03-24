@@ -1547,7 +1547,7 @@ class Client implements ClientInterface
 
     private function profileEndpointUrl()
     {
-	$profileEnvt = strtolower($this->config['sandbox']) ? "api.sandbox" : "api";
+	$profileEnvt = strtolower($this->config['sandbox']) ? "api-sandbox" : "api";
 	
         if (!empty($this->config['region'])) {
             $region = strtolower($this->config['region']);
